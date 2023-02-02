@@ -1,0 +1,31 @@
+.menu{   
+    margin: 0 30px;
+    padding-top: 5px;
+
+    @include tablets{
+        display: none;
+    }
+
+    &__list{
+        font-family: 'Alegreya Sans';
+        display: flex;
+        align-items: center;
+        font-size: rem(18px);
+        flex-wrap: wrap; //эл-ты перенесены при уменьш масш
+        justify-content: center;
+    }
+
+    &__item{
+        margin-right: rem(27px);
+        margin-bottom: 10px; //при переносе на др стр
+        
+        &:last-child{
+            margin-right: rem(0px);
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        white-space: nowrap; //не преносить на др стр
+    }
+}

@@ -1,0 +1,15 @@
+.hello__title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(48px);
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-top: rem(80px);
+    margin-bottom: rem(21px);
+
+    &__subtitle{
+        margin-top: rem(53px);
+    }
+    
+}
+

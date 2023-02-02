@@ -1,0 +1,43 @@
+.footer{
+
+    position: absolute;
+    bottom: rem(0px);
+    left: rem(0px);
+    right: rem(0px);
+    padding: rem(23px) rem(0px);
+    background: rgb(255 255 255);
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include phones{
+            flex-direction: column;
+        }
+    }
+
+    
+    &__contacts{
+        display: flex;
+    }
+
+    &__social{
+        margin-right: rem(10px);
+
+        &:last-child{
+            margin-right: rem(0px);
+        }
+    }
+
+    &__icon{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+
+        &:last-child{
+            margin-right: rem(0px);
+        }
+    }
+    
+}

@@ -1,0 +1,63 @@
+$containerWidth: 1100px;
+$baseFontSize: 16px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+
+//colors
+$ColorTitle: #292929;
+$grey: #F5F5F5;
+$black: #181818;
+$light-gray: #F8FAF9;
+$black: #000000;
+$red: #E01F3D;
+$lightRed: #9a5660;
+$Dark: #CA1B36;
+$white: #FFFFFF;
+
+//z-index   чт фикс меню ничто не перекрывало
+$z-fixed-menu: 100; 
+
+//@import "media";
+
+// blocks
+@import "./blocks/_media.scss";  //самый первый чб сработала ф-ция
+@import "./blocks/_base.scss";
+@import "./blocks/_hero.scss";
+@import "./blocks/_header.scss";
+@import "./blocks/_menu.scss";
+@import "./blocks/_features.scss";
+@import "./blocks/_feature.scss";
+@import "./blocks/_hello.scss";
+@import "./blocks/_btn.scss";
+@import "./blocks/_section.scss";
+@import "./blocks/_container.scss";
+@import "./blocks/_headline.scss";
+@import "./blocks/_benefits.scss";
+@import "./blocks/_benefit.scss";
+@import "./blocks/_benefits-section.scss";
+@import "./blocks/_reviews.scss";
+@import "./blocks/_interactive-avatar.scss";
+@import "./blocks/_form.scss";
+@import "./blocks/_radio.scss";
+@import "./blocks/_fixed-menu.scss";
+@import "./blocks/_footer.scss";
+@import "./blocks/_humburger.scss";
+@import "./blocks/_map.scss";
+@import "./blocks/_contacts.scss";
+
+
+
+//normalise
+@import url("https://cdnjs.cloudeflare.com/ajax/libs/normalise/8.0.1/normalise.min.css");
+
+
+// setups
+//@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;0,800;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;0,800;0,900;1,400&family=Play:wght@400;700&display=swap");
+
+
+
+

@@ -1,0 +1,19 @@
+.humburger{
+    width: 26px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    
+    @include tablets{
+        display: inline-flex;
+
+    }
+
+    &__plank{
+        display: block;
+        background: $ColorTitle;
+        height: 4.5px;   //иконка - в рх пч не нужно чб масштабировалась
+        border-radius: 13px; //половина высоты эл-та
+    }
+}

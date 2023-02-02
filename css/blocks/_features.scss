@@ -1,0 +1,15 @@
+.hero{
+
+    &__features{
+        display: flex;
+    }
+
+    &__item{
+        margin-right: rem(19px);
+        max-width: rem(166px);
+       
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

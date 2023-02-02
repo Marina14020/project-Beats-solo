@@ -1,0 +1,60 @@
+.radio{
+    display: flex;
+    cursor: pointer;
+    user-select: none; //чт не выделяло текст тоже-у меня норм
+
+    &--checkbox{
+        .radio__visible{
+            border-radius: rem(4px);
+
+            &::before{
+                background: url("../img/icons/tick.png") center center no-repeat;
+            }
+        }
+    }
+
+    &__elem{
+        display: none;
+
+        &:checked ~ .radio__visible{  //если вкл-checked,то блок кот ниже него
+            &::before{     //будет виден
+                display: block;
+            }
+        }
+    }
+
+    &__visible{
+        width: rem(25px);
+        height: rem(25px);
+        position: relative;
+        border-radius: 50%;
+        background: $white;
+
+        &:before{   //точка
+            content: "";
+            width: rem(13px);
+            height: rem(13px);
+            background: $red;
+            border-radius: 50%;
+            position: absolute;
+            display: none;
+            top: 25%;
+            left: 25%;
+            transform: translate(-50% -50%);
+        }
+    }
+
+    &__title{
+        align-items: center;
+        margin-left: rem(10px);
+        margin-right: rem(36px);
+
+        &:last-child{
+            margin-bottom: rem(40px);
+
+            @include phones{
+                margin-bottom: rem(28px);
+            }
+        }
+    }
+}

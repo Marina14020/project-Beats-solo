@@ -1,0 +1,77 @@
+.form{
+    display: flex;
+
+    @include tablets{
+        padding: 0 15%;
+        flex-direction: column;
+    }
+    
+    @include phones{
+        padding: rem(0px);
+    }
+
+    &__col{
+        flex: 1;
+        margin-right: rem(20px);
+        
+        @include tablets{
+            margin-right: rem(0px);
+        }
+
+        &:last-child{
+            margin-right: rem(0px);
+        }
+    }    
+        
+    &__row{
+        display: flex;
+        margin-bottom: rem(36px);
+    }
+        
+    &__block{
+        flex: 1;
+        margin-right: rem(20px);
+            
+        &:last-child{
+            margin-right: rem(0px);
+        }
+    }
+
+    &__input{
+        width: 100%;
+        border: none;
+        padding: rem(19px) rem(12px);
+        //border: solid rem(3px) #E01F3D;
+        border: solid rem(3px) transparent; //прозрачн
+        border-radius: rem(4px);
+
+        @include tablets{
+            padding: rem(8px) rem(10px);
+        }
+
+        &--textarea{
+            height: rem(152px);
+            resize: none;  //ч.б.не растяг коммент поля ввода
+        }
+
+        &:focus{
+            border-color: $red;
+            outline: none;
+        }
+    }
+    
+    &__controls{
+        display: flex;
+        flex-wrap: wrap;   //для многострочного
+        margin-bottom: rem(24px);
+
+        @include phones{
+            justify-content: center;
+        }
+    }
+
+    &__btns{
+        display: flex;
+        justify-content: center;
+    }
+}
